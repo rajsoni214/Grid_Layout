@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="50dp"
+    android:layout_height="60dp"
+    android:src="@drawable/baseline_person_24"
+    app:civ_border_width="2dp"
+    app:civ_border_color="@color/black"
+    android:id="@+id/userpic">
+</de.hdodenhof.circleimageview.CircleImageView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TECHPIEL TECHNOLOGY"
+    android:textAllCaps="true"
+    android:fontFamily="sans-serif-black"
+    android:textSize="20dp"
+    android:layout_marginLeft="15dp"
+    android:layout_toRightOf="@id/userpic"
+    android:paddingTop="15dp"
+    android:id="@+id/username"></TextView>
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hellow how are you doing?"
+        android:layout_below="@+id/username"
+        android:layout_toRightOf="@+id/userpic"
+        android:id="@+id/userlastmsg"
+        android:layout_marginLeft="30dp"
+        android:textSize="12dp"
+        android:textColor="@color/red"></TextView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="14/09/23"
+    android:textColor="@color/navy"
+    android:gravity="center"
+    android:id="@+id/userlastmsgdate"
+    android:layout_alignParentEnd="true"></TextView>
+</RelativeLayout>
